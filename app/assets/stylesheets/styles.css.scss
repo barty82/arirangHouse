@@ -1,0 +1,10 @@
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+
+.hero-unit{
+	background-image: url(.../images/tower1.png);
+
+	h1, p{
+		text-align: center;
+	}
+}
