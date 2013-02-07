@@ -1,10 +1,13 @@
-<div class="hero-unit">
-	<h1>환영합니다</h1>
-	<br/>
-	<p>
-		당신의 진정한 사업 파트너가 되어 드리겠습니다. <br/>
-		쿠웨이트 아리랑 하우스<br/><br/>
-		<button class="btn btn-large btn-primary" type="button">예약하기</button>
-	</p>
-</div>
-
+<% if admin_signed_in? %>
+	<h1>Hi Mam!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>환영합니다</h1>
+		<br/>
+		<p>
+			당신의 진정한 사업 파트너가 되어 드리겠습니다. <br/>
+			쿠웨이트 아리랑 하우스<br/><br/>
+			<button class="btn btn-large btn-primary" type="button">예약하기</button>
+		</p>
+	</div>
+<% end %>

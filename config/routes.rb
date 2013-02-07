@@ -1,4 +1,6 @@
 ArirangHouseROR::Application.routes.draw do
+  devise_for :admins
+
   get "about" => 'pages#about'
   root :to => 'pages#home'
 
