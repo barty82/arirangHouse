@@ -1,27 +1,21 @@
-<h1>Listing reservations</h1>
+<h1>예약요청 리스트</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th>Published</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>작성일</th>
+      <th>성함</th>
+      <th>제목</th>
+      <th>내용</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @reservations %>
+  </tbody>
 
-<% @reservations.each do |reservation| %>
-  <tr>
-    <td><%= reservation.name %></td>
-    <td><%= reservation.title %></td>
-    <td><%= reservation.content %></td>
-    <td><%= reservation.published %></td>
-    <td><%= link_to 'Show', reservation %></td>
-    <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-    <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
 </table>
 
 <br />
