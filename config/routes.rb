@@ -1,4 +1,7 @@
 ArirangHouseROR::Application.routes.draw do
+  resources :reservations
+
+
   devise_for :admins
 
   get "about" => 'pages#about'

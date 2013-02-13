@@ -2,9 +2,10 @@
 @import 'bootstrap-responsive';
 
 .hero-unit{
-	background-image: url(.../images/tower1.png);
+	background-image: url(image_path('tower1.png'));
 
 	h1, p{
 		text-align: center;
+		color: #fff;
 	}
 }
