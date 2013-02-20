@@ -2,8 +2,7 @@
   <td><%= reservation.published %></td>
   <td><%= reservation.name %></td>
   <td><%= reservation.title %></td>
-  <td><%= reservation.content %></td>
-  <td><%= link_to 'Show', reservation %></td>
-  <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-  <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <td><%= link_to '자세히 보기', reservation %></td>
+  <td><%= link_to '수정하기', edit_reservation_path(reservation) %></td>
+  <td><%= link_to '삭제하기', reservation, method: :delete, data: { confirm: '정말 삭제 하시겠습니까?' } %></td>
 </tr>

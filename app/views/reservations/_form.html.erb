@@ -2,8 +2,9 @@
   <%= f.error_notification %>
 
   <%= f.input :name, label: "성함" %>
+  <%= f.input :user_email, label: "이메일" %>
   <%= f.input :title, label: "제목" %>
-  <%= f.input :content, label: "자세한 내용", input_html:{rows: 6}%>
+  <%= f.input :content, label: "자세한 내용", input_html:{rows: 9}%>
 
   <%= @reservation.published %>
   

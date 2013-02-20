@@ -2,7 +2,11 @@
 @import 'bootstrap-responsive';
 
 .hero-unit{
-	background-image: url(image_path('tower1.png'));
+	background-image: url(image_path('hero_unit_bg2.png'));
+	background-repeat:no-repeat;
+	background-position:center; 
+	//background-size: 100%;
+	
 
 	h1, p{
 		text-align: center;
